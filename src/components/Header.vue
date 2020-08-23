@@ -1,16 +1,16 @@
 <template>
-<link href="https://fonts.googleapis.com/css2?family=Arvo:wght@700&display=swap" rel="stylesheet">
 <div>
-    <img src="../assets/KK.jpeg" alt="KK-Logo">
-    <nav>
-        <ul>
-            <li><router-link to="/">Home</router-link></li> |
-            <li><router-link to="/ProjectsSkills">Projects & Skills</router-link></li> |
-            <li><router-link to="/Blog">Blog</router-link></li> |
-            <li><router-link to="/Contact">Contact</router-link></li>
-        </ul>
-    </nav>
-    <hr>
+    <nav class="flex mb-4 pb-3 border-b-2 border-black">
+        <div class="w-1/3 nice:w-1/2 ml-3 mt-3 md:ml-2 md:mt-2">
+            <img class="w-12 h-12" src="../assets/KK.jpeg" alt="KK-Logo">
+        </div>
+        <div class="flex justify-end w-2/3 nice:w-1/2 mt-4 sm:text-base md:text-xl font-bold text-gray-700">
+            <router-link class="px-2 sm:px-4" to="/">Home</router-link>
+            <router-link class="px-2 sm:px-4" to="/ProjectsSkills">Projects & Skills</router-link>
+            <router-link class="px-2 sm:px-4" to="/Blog">Blog</router-link>
+            <router-link class="px-2 sm:px-4" to="/Contact">Contact</router-link>
+        </div>
+    </nav> 
 </div>
 </template>
 
@@ -21,34 +21,8 @@ export default {
 </script>
 
 <style scoped>
-img{
-    padding: 0px 30px;
-    width: 60px;
-    height: 60px;
-    float: left;
-}
-ul{
-    padding: 0px 0px 0px 800px;
-    display: inline-block;
-    overflow: hidden;
-}
-li{
-    font-size: 20px;
-    display: inline-block;
-    margin: 0 20px;
-    border-bottom: 3px solid transparent;
-}
-a{
-    text-decoration: none;
-    font-family: "Arvo", serif;
-}
 .router-link-exact-active{
+    @apply border-b-2;
     border-bottom: 3px solid red;
-}
-hr{
-    height:3px;
-    border-width:0;
-    color:black;
-    background-color:black;
 }
 </style>
