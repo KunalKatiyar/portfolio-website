@@ -1,6 +1,6 @@
 <template>
 <div>
-    <nav class="flex mb-4 pb-3 border-b-2 border-black">
+    <nav class="flex mb-4 pb-3 border-b-2 border-gray-500">
         <div class="w-1/6 nice:w-1/2 ml-3 mt-3 md:ml-2 md:mt-2">
             <img class="w-12 h-12" src="../assets/KK.jpeg" alt="KK-Logo">
         </div>

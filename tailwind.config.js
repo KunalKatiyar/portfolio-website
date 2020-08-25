@@ -7,7 +7,7 @@ module.exports = {
         bor: '#FF6600'
       },
       screens:{
-        nice: '950px',
+        nice: '985px',
         mobile: '430px',
         smallmobile: '350px'
       },
@@ -15,6 +15,9 @@ module.exports = {
         supersm: '15rem',
         ...breakpoints(theme('screens')),
       }),
+      fontSize:{
+        f: '0.7rem'
+      }
     },
   },
   variants: {},
